@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AB6A12F5-E4CE-483E-8899-C27B159569A1}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25420.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../glew/include;../../GLFW/Include;./MyGraph/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../../glew/lib/glew32.lib;../../GLFW/lib/GLFW.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBC.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../glew/include;../../GLFW/Include;./MyGraph/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <WarningLevel>Level1</WarningLevel>
+      <PreprocessToFile>true</PreprocessToFile>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../../glew/lib/glew32.lib;../../GLFW/lib/GLFW.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CT_draw.cpp" />
+    <ClCompile Include="Iso.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyGraph\Camera.cpp" />
+    <ClCompile Include="MyGraph\CS3.cpp" />
+    <ClCompile Include="MyGraph\Draw.cpp" />
+    <ClCompile Include="MyGraph\Draw2D.cpp" />
+    <ClCompile Include="MyGraph\ivec2.cpp" />
+    <ClCompile Include="MyGraph\ivec3.cpp" />
+    <ClCompile Include="MyGraph\mat34.cpp" />
+    <ClCompile Include="MyGraph\Mouse.cpp" />
+    <ClCompile Include="MyGraph\output.cpp" />
+    <ClCompile Include="MyGraph\Shader.cpp" />
+    <ClCompile Include="MyGraph\str.cpp" />
+    <ClCompile Include="MyGraph\vec2.cpp" />
+    <ClCompile Include="MyGraph\vec3.cpp" />
+    <ClCompile Include="MyGraph\vec4.cpp" />
+    <ClCompile Include="SimText.cpp" />
+    <ClCompile Include="SimText3D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Iso.h" />
+    <ClInclude Include="MyGraph\AllDef.h" />
+    <ClInclude Include="MyGraph\AllInc.h" />
+    <ClInclude Include="MyGraph\Camera.h" />
+    <ClInclude Include="MyGraph\CS3.h" />
+    <ClInclude Include="MyGraph\Draw.h" />
+    <ClInclude Include="MyGraph\Draw2D.h" />
+    <ClInclude Include="MyGraph\ivec2.h" />
+    <ClInclude Include="MyGraph\ivec3.h" />
+    <ClInclude Include="MyGraph\mat34.h" />
+    <ClInclude Include="MyGraph\Mouse.h" />
+    <ClInclude Include="MyGraph\output.h" />
+    <ClInclude Include="MyGraph\Shader.h" />
+    <ClInclude Include="MyGraph\str.h" />
+    <ClInclude Include="MyGraph\vec.h" />
+    <ClInclude Include="MyGraph\vec2.h" />
+    <ClInclude Include="MyGraph\vec3.h" />
+    <ClInclude Include="MyGraph\vec4.h" />
+    <ClInclude Include="SimText.h" />
+    <ClInclude Include="SimText3D.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

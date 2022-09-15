@@ -1,0 +1,29 @@
+﻿  CT_draw.cpp
+C:\Program Files (x86)\Windows Kits\8.1\Include\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
+  D:\PROJECTS\VR\DVR up1\GLFW\Include\GL/glfw.h(72): note: see previous definition of 'APIENTRY'
+C:\Program Files (x86)\Windows Kits\8.1\Include\um\wingdi.h(32): warning C4005: 'WINGDIAPI': macro redefinition
+  D:\PROJECTS\VR\DVR up1\GLFW\Include\GL/glfw.h(88): note: see previous definition of 'WINGDIAPI'
+  Iso.cpp
+  CS3.cpp
+  Camera.cpp
+  Draw.cpp
+  Draw2D.cpp
+  Shader.cpp
+  ivec2.cpp
+  ivec3.cpp
+  mat34.cpp
+  output.cpp
+  str.cpp
+  vec2.cpp
+  vec3.cpp
+  vec4.cpp
+  SimText.cpp
+  SimText3D.cpp
+  main.cpp
+C:\Program Files (x86)\Windows Kits\8.1\Include\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
+  D:\PROJECTS\VR\DVR up1\GLFW\Include\GL/glfw.h(72): note: see previous definition of 'APIENTRY'
+C:\Program Files (x86)\Windows Kits\8.1\Include\um\wingdi.h(32): warning C4005: 'WINGDIAPI': macro redefinition
+  D:\PROJECTS\VR\DVR up1\GLFW\Include\GL/glfw.h(88): note: see previous definition of 'WINGDIAPI'
+  Generating Code...
+  CT_tutorial.vcxproj -> D:\PROJECTS\VR\DVR up1\CT_tutorial_hand\Debug\CT_tutorial.exe
+  CT_tutorial.vcxproj -> D:\PROJECTS\VR\DVR up1\CT_tutorial_hand\Debug\CT_tutorial.pdb (Full PDB)
