@@ -14,7 +14,7 @@ git push -u origin main
 
 to push:
 ```
-git remote add origin https://github.com/almakonde/CLHackathon.git
+git remote add origin https://github.com/almakonde/... .git
 git branch -M main
 git push -u origin main
 ```
